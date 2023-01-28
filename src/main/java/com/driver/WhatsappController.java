@@ -43,7 +43,7 @@ public class WhatsappController {
     }
 
     @PutMapping("/send-message")
-    public int sendMessageMessage message, User sender, Group group) throws Exception{
+    public int sendMessage(Message message, User sender, Group group) throws Exception{
 
         return whatsappService.sendMessage(message, sender, group);
     }
